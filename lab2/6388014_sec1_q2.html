@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>6388014 Sec1 Q2.</title>
+    </head>
+    <body>
+        <form action="some.html" method="GET">
+            <fieldset style="width: 250pt">
+                <legend><h1>Registration</h1></legend>
+                <label for="txtStudentID">Student ID</label>
+                <input type="text" name="txtStudentID"pattern="[0-9]{7}" placeholder="#######" title="#######" required><br>
+                <label for="txtsec">Section: </label>
+                <input type="radio" name="section" checked>1
+                <input type="radio" name="section">2
+                <input type="radio" name="section">3<br>
+                <label for="txtmajor">Majors: </label>
+                <select name="txtmajor">
+                    <option value="CS">Comp.Sci.</option>
+                    <option value="DB">Data.Int.</option>
+                    <option value="CN">Comp.Net.</option>
+                    <option value="SE">Soft.Eng.</option>
+                    <option value="EB">Elec.Busi.</option>
+                    <option value="MM">Mult.Sys.</option>
+                    <option value="Ms">Mana.Inf.</option>
+                    <option value="HT">Hea.Tech.</option>
+                    <option value="None">None</option>
+                </select><br>                   
+                <label for="txtFName">First Name</label>
+                <input type="text" name="txtFName" pattern="[A-Za-z]{1,32}" placeholder="Negan"title="Alphabet only" required><br>
+                <label for="txtLName">Last Name</label>
+                <input type="text" name="txtLName" pattern="[A-Za-z]{1,32}" placeholder="Smith"title="Alphabet only" required><br>
+                <label for="cldBD">Birthday</label>
+                <input type="date" name="cldBD" min="2000-01-01" max="2022-12-31" required><br>
+                <label for="txtgender">Gender: </label>
+                <input type="radio" name="gender" checked>IDK
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Male<br>
+                <label for="txthobbies">Hobbies: </label><br>
+                <input type="checkbox" name="txthobbies" value="bb">Basketball
+                <input type="checkbox" name="txthobbies" value="fb">Football
+                <input type="checkbox" name="txthobbies" value="pp">Programming<br>
+                <input type="checkbox" name="txthobbies" value="pg">Photography
+                <input type="checkbox" name="txthobbies" value="gg">Gaming<br>
+                <label for="txtmail">E-mail:</label>
+                <input type="email" name="txtmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Name.3 letters of lastname@student.mahidol.ac.th" 
+                title="Name.3 letters of lastname@student.mahidol.ac.th" required><br>
+                <label for="txttel">Phone number:</label>
+                <input type="tel" name="txttel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" title="###-###-####" required><br>
+                <label for="txtpwd">Password:</label>
+                <input type="password" id="txtpwd" pattern=".{4,8}" placeholder="****" title="Four to eigth characters"><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </fieldset>
+        </form>    
+    </body>
+</html>
