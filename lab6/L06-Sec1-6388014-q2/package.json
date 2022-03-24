@@ -1,0 +1,14 @@
+{
+  "name": "l06-sec1-6388014-q2",
+  "version": "1.0.0",
+  "main": "L06-Sec1-6388014-q2.js",
+  "scripts": {
+    "start": "nodemon L06-Sec1-6388014-q2.js"
+  },
+  "author": "Waris, Section 1, 6388014",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
