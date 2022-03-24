@@ -1,0 +1,18 @@
+{
+  "name": "lab07-sec1-6388014-q2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "L07-Sec1-6388014-q2.js",
+  "scripts": {
+    "start": "nodemon L07-Sec1-6388014-q2"
+  },
+  "author": "Waris Damkham, Section 1,6388014",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15"
+  }
+}

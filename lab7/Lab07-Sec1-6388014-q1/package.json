@@ -1,0 +1,16 @@
+{
+  "name": "lab07-sec1-6388014-q1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "L07-Sec1-6388014-q1.js",
+  "scripts": {
+    "start": "nodemon L07-Sec1-6388014-q1.js"
+  },
+  "author": "Waris Damkham, Section 1,6388014",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
