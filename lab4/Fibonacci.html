@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fibonacci</title>
+        <script>
+            const number = parseInt(prompt('Enter the number of Fibonacci series less than: '));
+            console.log("Using for loops");
+            console.log("Fibonacci series less than "+ number);
+            var n1=0 ,n2 =1,next,i;
+            myForLoop:
+            for(i = 1;i<100;i++){
+                console.log('\n'+n1);
+                next = n1 + n2;
+                n1=n2;
+                n2=next;
+                if(n1>number){
+                    break myForLoop;
+                }
+            }
+        </script>    
+    </head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array!!!</title>
+        <script type="text/javascript">
+            console.log("Friends array");
+            var friends = new Array("Nathnaree","Wudhichart","Jam","M","Bank");
+            Array.prototype.displayItems = function (){
+                for (var i=0;i<this.length;i++){
+                    console.log(this[i]+"");
+                }
+            }
+            friends.displayItems();
+            console.log("The number of items in friends array is "+friends.length);
+            console.log("The SORTED friends array");
+            Array.prototype.sorted = function (){
+                for (var i=0;i<friends.length;i++){
+                    friends.sort();
+                    console.log(friends[i]+"");
+                }
+            }
+            friends.sorted();
+            console.log("The REVERSED friends array");
+            Array.prototype.reversed = function (){
+                friends.reverse();
+                for (var i=0;i<friends.length;i++){
+                    console.log(friends[i]+"");
+                }
+            }
+            friends.reversed();
+            console.log("The friends array after REMOVING the LAST item");
+            Array.prototype.poped= function (){
+                friends.pop();
+                for (var i=0;i<friends.length;i++){
+                    console.log(friends[i]+"");
+                }
+            }
+            friends.poped();
+            console.log("The friends array after PUSH");
+            Array.prototype.pushed= function (){
+                friends.push("New Friend");
+                for (var i=0;i<friends.length;i++){
+                    console.log(friends[i]+"");
+                }
+            }
+            friends.pushed();
+        </script>  
+    </head>
+    <body>
+    </body>
+</html>
