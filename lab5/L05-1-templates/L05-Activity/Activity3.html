@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            .myFont{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 50px;
+                word-spacing: 2px;
+                color: #1C497D;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "name">
+            <span id = "firstName"></span>
+            <span id = "lastName"></span>
+        </div>
+        <script type="application/javascript">
+            /* ----- Your JS code is here ----- */
+            /* 1. Append a new <span> with id = "nickName"  */
+            var nnode = document.createElement("span");
+            nnode.id="nickName";
+            document.getElementById("name").appendChild(nnode);
+            /* 2. Insert your name for the content of each <span> */
+            let fnode = document.getElementById("firstName")
+            fnode.appendChild(document.createTextNode("Waris"));
+            document.getElementById("firstName").appendChild(document.createElement("br"));
+            let lnode = document.getElementById("lastName")
+            lnode.appendChild(document.createTextNode("Damkham"));
+            document.getElementById("lastName").appendChild(document.createElement("br"));
+            nnode.appendChild(document.createTextNode("M"));
+            nnode.appendChild(document.createElement("br"));
+            /* 3. Apply all <span> with the class "myFont"  */
+            fnode.className = "myFont";
+            lnode.className = "myFont";
+            nnode.className = "myFont";
+            /* ==========  Activity 3 ends here  ========== */
+        </script>
+    </body>
+</html>
