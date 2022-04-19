@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html language="en">
+  <head>
+    <title>Home</title>
+    <%- include('./partials/style'); %>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <%- include('./partials/header'); %>
+      <!-- Content -->
+      <div class="row p-3">
+        <% for(let i=0; i < reminders.length; i++) { %>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><%= reminders[i].header %></h5>
+              <p class="card-text">
+                <%= reminders[i].content %> <br />Due Date: <%= new
+                Date(reminders[i].duedate).toLocaleDateString() %>
+              </p>
+              <a href="#" class="btn btn-dark">View Detail</a>
+            </div>
+          </div>
+        </div>
+        <% } %>
+      </div>
+      <!-- Footer -->
+      <%- include('./partials/footer'); %>
+    </div>
+  </body>
+</html>

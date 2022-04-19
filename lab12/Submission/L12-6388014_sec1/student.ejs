@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html language="en">
+  <head>
+    <title>Student</title>
+    <%- include('./partials/style'); %>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <%- include('./partials/header'); %>
+      <!-- Content -->
+      <h1 class='row p-3'>
+        List of <%= student.length %> students
+      </h1>
+      <div class="row p-3">
+        <% for(let i=0; i < student.length; i++) { %>
+        <div class="col-sm-4">
+          <div class="card mb-3">
+            <div class="card-header text-white bg-primary">
+              Student #<%= i + 1 %>
+            </div>
+            <div class="card-body bg-white">
+              <h5 class="card-title">
+                <%= student[i].firstname %> <%= student[i].lastname %>
+              </h5>
+              <p class="card-text">
+                <div>Age: <%= student[i].age %></div>
+                <div>Email: <%= student[i].email %></div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <% } %>
+      </div>
+      <!-- Footer -->
+      <%- include('./partials/footer'); %>
+    </div>
+  </body>
+</html>
